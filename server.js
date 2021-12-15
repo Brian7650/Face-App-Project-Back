@@ -21,6 +21,8 @@ const db = knex ({
 
 const app = express();
 
+const port = process.env.PORT || 3000
+
 app.use(cors())
 app.use(express.json());// latest version of exressJS now comes with Body-Parser!
 
