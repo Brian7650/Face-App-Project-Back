@@ -15,7 +15,6 @@ const app = new Clarifai.App({
 }
 
 
-
    const handleImage = (req, res, db) => {
     const { id } = req.body;
     db('users').where('id', '=', id)
